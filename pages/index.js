@@ -23,9 +23,5 @@ export default class Index extends React.Component {
     )
   }
 }
-<Route exact path="/netlify/anything" render={() => (
 
-    <Redirect to="https://www.google.com/search?q=anything"/>
-
-)}/>
 
