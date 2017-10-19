@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import { config } from 'config'
-
+import { Route, Redirect } from 'react-router'
 export default class Index extends React.Component {
   render () {
     return (
@@ -23,3 +23,9 @@ export default class Index extends React.Component {
     )
   }
 }
+<Route exact path="/netlify/anything" render={() => (
+
+    <Redirect to="https://www.google.com/search?q=anything"/>
+
+)}/>
+
